@@ -1,0 +1,26 @@
+﻿<h2>Five Followers</h2>
+<div class="d-table col-12 width-full py-4 border-bottom border-gray-light" ng-repeat="follower in ListOfFollowers" ng-if="$index<=4">
+    <div class="d-table-cell col-1 v-align-top">
+        <a href="#"><img alt="@zeemanx" class="avatar" height="50" src="Images/{{follower.PassportSting}}" width="50"></a>
+    </div>
+
+    <div class="d-table-cell col-9 v-align-top pr-3">
+        <a href="#" class="d-inline-block no-underline mb-1">
+            <span class="f4 link-gray-dark">{{follower.FullNames}}</span>
+            <span class="link-gray pl-1"></span>
+        </a>
+    </div>
+
+    <div class="d-table-cell col-2 v-align-top text-right">
+
+
+        <span class="user-following-container">
+            <span class="follow">
+                <a href="#" class="btn btn-sm ">
+                    Follow
+                </a>
+            </span>
+        </span>
+
+    </div>
+</div>

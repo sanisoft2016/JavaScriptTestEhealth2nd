@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html ng-app="appScripts">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="Css/css2.min.css" rel="stylesheet" />
+    <link href="Css/css1.min.css" rel="stylesheet" />
+    <link href="Css/css3.min.css" rel="stylesheet" />
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/scripts.js"></script>
+</head>
+<body>
+    <div class="container-lg clearfix px-3 mt-4">
+        <div class="h-card col-3 float-left pr-3" itemscope="" itemtype="http://schema.org/Person">
+
+            <div class="user-profile-sticky-bar js-user-profile-sticky-bar">
+                <div class="user-profile-mini-vcard d-table">
+                    <span class="user-profile-mini-avatar d-table-cell v-align-middle lh-condensed-ultra pr-2">
+                        <img alt="@unicodeveloper" class="rounded-1" height="32" src="Images/2946769.png" width="32">
+                    </span>
+                    <span class="d-table-cell v-align-middle lh-condensed js-user-profile-following-mini-toggle">
+                        <strong>unicodeveloper</strong>
+                        <span class="user-following-container">
+                            <span class="follow">
+                                <a href="#" class="btn btn-sm mini-follow-button ">
+                                    Follow
+                                </a>
+                            </span>
+                        </span>
+
+                    </span>
+                </div>
+            </div>
+            <a href="#" aria-hidden="true" class="u-photo d-block position-relative" itemprop="image"><img alt="" class="avatar width-full rounded-2" height="230" src="Images/2946769.png" width="230"></a>
+
+
+            <div class="vcard-names-container py-3 js-user-profile-sticky-fields is-placeholder"
+                 style="visibility: hidden; display: none; height: 116px;"></div>
+            <div class="vcard-names-container py-3 js-sticky js-user-profile-sticky-fields" style="position: static; top: 0px; left: 184.5px; width: 229px;">
+                <h1 class="vcard-names">
+                    <span class="p-name vcard-fullname d-block" itemprop="name">Prosper Otemuyiwa</span>
+                    <span class="p-nickname vcard-username d-block" itemprop="additionalName">unicodeveloper</span>
+                </h1>
+            </div>
+
+            <div class="p-note user-profile-bio"><div>Engineer =&gt; Writer =&gt; Speaker Community Builder =&gt; OSS =&gt; Evangelist. Google Developer Expert.</div></div>
+        </div>
+
+        <div class="col-9 float-left pl-2">
+
+        <style></style>
+
+            <div class="user-profile-nav top-0 is-placeholder" style="visibility: hidden; display: block; height: 63px; width: 850px"></div>
+            <div class="user-profile-nav js-sticky top-0 is-stuck" style="position: fixed; top: 0px; left: 437.5px; width: 727px; margin-top: 0px; margin-left: auto;margin-right: auto">
+                <nav class="underline-nav text-center" data-pjax="" role="navigation" ng-controller="routeController">
+                    <a href="JavaScript:Void(0)" class="underline-nav-item " aria-selected="false" role="tab" ng-click="Repositories()">
+                        <strong>Repositories</strong>
+                        <span class="Counter">
+                        </span>
+                    </a>
+
+                    <a href="JavaScript:Void(0)" class="underline-nav-item " aria-selected="false" role="tab" ng-click="Followers()">
+                        <strong>Followers</strong>
+                        <span class="Counter">
+                        </span>
+                    </a>
+                    <a href="JavaScript:Void(0)" class="underline-nav-item " aria-selected="false" role="tab" ng-click="Following()">
+                        <strong>Following</strong> 
+                        <span class="Counter">
+                        </span>
+                    </a>
+                </nav>
+            </div>
+
+            <div class="js-repo-filter position-relative">
+                <div class="mt-4">
+                    <div class="js-pinned-repos-reorder-container">
+                        <div class="js-repo-filter position-relative">
+                            <div ng-view>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
